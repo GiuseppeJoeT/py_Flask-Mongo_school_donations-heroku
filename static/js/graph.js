@@ -56,10 +56,16 @@ function makeGraphs(error, projectsJson) {
         return d["funding_status"];
     });
 
+    // test
+    /* var schoolDistrict = ndx.dimension(function (d) {
+        return d["school_district"];
+    }); */
+
+
     // Calculate metrics
 
 /*  Next we calculate metrics and groups for grouping and counting our data */
-    var numProjectsByDate = dateDim.group(); //
+    var numProjectsByDate = dateDim.group();
     var numProjectByResourceType = resourceTypeDim.group();
     var numProjectByPovertyLevel = povertyLevelDim.group();
     var numProjectByFundingStatus = fundingStatus.group();
@@ -67,12 +73,14 @@ function makeGraphs(error, projectsJson) {
         // reduceSum() is the result shows only the total donations of the selected state
         return d["total_donations"];
     });
+    /*var numSchoolDistrict = schoolDistrict.group();
+    var numProjectByDonation = totalDonationsDim.group();*/
 
     var stateGroup = stateDim.group();
 
     var all = ndx.groupAll();
     var totalDonations = ndx.groupAll().reduceSum(function (d) {
-        return d["total_donations"]
+        return d["total_donations"];
     });
 
 
@@ -81,6 +89,10 @@ function makeGraphs(error, projectsJson) {
     // Define values (to be used in charts)
     var minDate = dateDim.bottom(1)[0]["date_posted"];
     var maxDate = dateDim.top(1)[0]["date_posted"];
+
+    /* Test Total Donations/Min-Max
+    var minDonation = totalDonationsDim.bottom(1)[0]["total_donations"];
+    var maxDonation = totalDonationsDim.top(1)[0]["total_donations"]; */
 
     // Charts
 
@@ -92,6 +104,7 @@ function makeGraphs(error, projectsJson) {
     var numberProjectsND = dc.numberDisplay("#number-projects-nd");
     var totalDonationsND = dc.numberDisplay("#total-donations-nd");  // Total Donations in USD
     var fundingStatusChart = dc.pieChart("#funding-chart");
+   // var schoolDistrictChart = dc.barChart("#school-district-funding-status");
 
     selectField = dc.selectMenu("#menu-select")
         .dimension(stateDim)
@@ -148,28 +161,21 @@ function makeGraphs(error, projectsJson) {
         .dimension(fundingStatus)
         .group(numProjectByFundingStatus);
 
-
-
+   /* schoolDistrictChart
+        .width(800)
+        .height(200)
+        .margins({top: 10, right: 50, bottom: 30, left: 50})
+        .dimension(totalDonationsDim)
+        .group(stateGroup)
+        .transitionDuration(500)
+        .x(d3.time.scale().domain([minDonation, maxDonation]))
+        .elasticY(true)
+        .xAxisLabel("School District")
+        .yAxis().ticks(4);
+*/
     dc.renderAll();
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
