@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Donations Dashboard</title>
+    <link rel="stylesheet" href="../static/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/lib/css/dc.css">
+    <link rel="stylesheet" href="../static/lib/css/keen-dashboards.css">
+    <link rel="stylesheet" href="../static/css/custom.css">
+    <link rel="stylesheet" href="../static/css/introjs.css">
+
+
+</head>
+
+<body class="application"> <!--  -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!-- is in keen-dashboard.css  -->
+            <a class="navbar-brand" href="./">School Donations Dashboard</a>
+            <button class="intro_button" type="button" autofocus
+                    onclick="javascript:introJs().start();"
+                    data-step="1" data-intro="Start the Dashboard tour to understand
+                    better how it works."
+                    style="font-weight: normal" data-position="right">Start Tour!
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="outer" class="container-fluid">
+
+    <div class="row">
+
+        <div class="col-sm-8">
+
+            <div class="row">
+                <!-- Time Chart -->
+                <div class="col-sm-12">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Number Of Donations
+                        </div>
+                        <div class="chart-stage">
+                            <div id="time-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Time Chart -->
+
+                <!-- Resources -->
+                <div class="col-sm-6">
+                    <div class="chart-wrapper">
+                        <div class="chart-title">
+                            Resources Type
+                        </div>
+                    </div>
+                    <div class="start-stage">
+                        <div id="resource-type-row-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Resources -->
+
+            <!-- Funding Pie -->
+            <div class="col-sm-6">
+                <div class="chart-wrapper">
+                    <div class="chart-title">
+                        Funding status
+                    </div>
+                    <div class="chart-stage">
+                        <div id="funding-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Funding Pie -->
+
+        </div> <!-- ??? -->
+    </div>
+
+    <!-- Poverty -->
+    <div class="col-sm-3">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                Poverty Level
+            </div>
+            <div class="chart-stage">
+                <div id="poverty-level-row-chart"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Poverty -->
+
+    <!--  menu select -->
+    <div class="col-sm-6">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                Donation State
+            </div>
+            <div class="chart-stage">
+                <div id="menu-select"></div>
+            </div>
+        </div>
+    </div>
+    <!-- menu select -->
+
+    <!-- Metric 1 -->
+    <div class="col-sm-2">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+                Total Number of Donations
+            </div>
+        </div>
+        <div class="chart-stage" style="background: #33CC99;
+                    position: relative;
+                    font-size: 29px;
+                    color: #000000;
+                    vertical-align: middle;
+                    text-align: center;
+                    padding-top: 12px;
+                    padding-bottom: 0px;
+                    ">
+            <div id="number-projects-nd"></div>
+        </div>
+    </div>
+</div>
+<!-- Metric 1 -->
+
+<!-- Metric 2 -->
+<div class="col-sm-2">
+    <div class="chart-wrapper">
+        <div class="chart-title">
+            Total Donations in USD
+        </div>
+        <div class="chart-stage">
+            <div id="total-donations-nd"></div>
+        </div>
+    </div>
+</div>
+<!-- Metric 2 -->
+
+
+<hr>
+<p class="small text-muted">Data Viz &#9829; from Code
+    Institute</a></p>
+
+
+
+
+<script src="/static/lib/js/jquery.min.js"></script>
+<script src="/static/lib/js/bootstrap.min.js"></script>
+<script src="/static/lib/js/crossfilter.js"></script>
+<script src="/static/lib/js/d3.js"></script>
+<script src="/static/lib/js/dc.js"></script>
+<script src="/static/lib/js/queue.js"></script>
+<script src="/static/lib/js/intro.js" type="text/javascript"></script>
+
+<script src="/static/lib/js/keen.min.js"></script>
+<script src="/static/js/graph.js" type="text/javascript"></script>
+
+</body>
+</html>
