@@ -62,3 +62,23 @@
     color: #ffffff;
     font-size: large;
 }
+
+/* style for loading screen */
+#overlay {
+    background: #ffffff;
+    background-image: url("712.GIF");
+    background-repeat:no-repeat ;
+    background-position: 50% 50%;
+    color: #666666;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    float: left;
+    text-align: center;
+    padding-top: 25%;
+    margin-left: auto;
+    margin-right:auto;
+}
