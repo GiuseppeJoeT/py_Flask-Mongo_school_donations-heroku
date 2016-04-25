@@ -1,6 +1,6 @@
 # Python Flask framework and D3.js library - Charts Dashboard
 
-### Check out the live test project: https://young-chamber-49434.herokuapp.com/
+### Check out the live test project: https://d3-js-data-viz-dashboard.herokuapp.com/
 
 The goal of this project is to expand on the skillsets and tools for creating a
 meaningful interactive data visualization. 

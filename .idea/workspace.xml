@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1187026-c69b-47e1-842d-ffc57ee9319d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/indexOK.html" afterPath="$PROJECT_DIR$/templates/indexOK.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/school_donations.py" afterPath="$PROJECT_DIR$/school_donations.py" />
     </list>
     <ignored path="py_Flask-Mongo_school_donations-heroku.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +31,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.6911197">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="school_donations.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="school_donations.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/school_donations.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+                <state vertical-scroll-proportion="0.57377046">
+                  <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
                   <folding>
                     <element signature="e#0#23#0" expanded="true" />
                   </folding>
@@ -62,11 +63,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="indexOK.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="indexOK.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/indexOK.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.4810996">
-                  <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+                <state vertical-scroll-proportion="-102.14286">
+                  <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -77,7 +78,7 @@
               <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
                 <state split_layout="FIRST">
                   <first_editor vertical-scroll-proportion="0.1009009">
-                    <caret line="2" column="79" selection-start-line="2" selection-start-column="79" selection-end-line="2" selection-end-column="79" />
+                    <caret line="2" column="84" selection-start-line="2" selection-start-column="84" selection-end-line="2" selection-end-column="84" />
                     <folding />
                   </first_editor>
                   <second_editor />
@@ -127,9 +128,9 @@
         <option value="$PROJECT_DIR$/static/js/graph.js" />
         <option value="$PROJECT_DIR$/school_donations_localhost.py" />
         <option value="$PROJECT_DIR$/static/css/custom.css" />
-        <option value="$PROJECT_DIR$/school_donations.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/templates/indexOK.html" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/school_donations.py" />
       </list>
     </option>
   </component>
@@ -898,21 +899,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/school_donations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.1009009">
-            <caret line="2" column="79" selection-start-line="2" selection-start-column="79" selection-end-line="2" selection-end-column="79" />
+            <caret line="2" column="84" selection-start-line="2" selection-start-column="84" selection-end-line="2" selection-end-column="84" />
             <folding />
           </first_editor>
           <second_editor />
@@ -924,9 +915,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/indexOK.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4810996">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state vertical-scroll-proportion="-102.14286">
+          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/school_donations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57377046">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
